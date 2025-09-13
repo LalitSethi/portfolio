@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalit Sethi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Lalit Sethi</div>
+        <div class="nav-links">
+            <a href="#about" onclick="scrollToSection('about')">About</a>
+            <a href="#education" onclick="scrollToSection('education')">Education</a>
+            <a href="#skills" onclick="scrollToSection('skills')">Skills</a>
+            <a href="#projects" onclick="scrollToSection('projects')">Projects</a>
+            <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="profile-photo">
+            <img src="images/personal/my-photo.jpg" alt="Lalit Sethi" class="main-photo">
+        </div>
+        <h1>Lalit Sethi</h1>
+        <p>Computer Science Engineering Student | Full Stack Developer</p>
+        <div class="current-status">
+            <span class="status-badge">3rd Year 5th Sem • CGPA: 7.44</span>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate Computer Science Engineering student at Roland Institute of Technology, Berhampur, with a strong foundation in programming and problem-solving. Currently in my 3rd year 5th semester with a CGPA of 7.44, I have expertise in C++, Python, and web development technologies. Beyond technical skills, I excel in communication, lead generation, and team leadership.</p>
+    </section>
+
+    <section class="education" id="education">
+        <h2>🎓 My Educational Journey</h2>
+        <div class="education-timeline">
+            <!-- College Card -->
+            <div class="edu-card college-card" onclick="showDetails('college')">
+                <div class="edu-image">
+                    <img src="images/college/college-main.jpg" alt="Roland Institute of Technology">
+                </div>
+                <div class="edu-content">
+                    <h3>🎓 Bachelor's Degree</h3>
+                    <h4>Roland Institute of Technology, Berhampur</h4>
+                    <p><strong>Course:</strong> Computer Science and Engineering</p>
+                    <p><strong>Current:</strong> 3rd Year 5th Semester</p>
+                    <p><strong>CGPA:</strong> 7.44 (4th Sem)</p>
+                    <p><strong>Expected Graduation:</strong> 2027</p>
+                    <span class="click-hint">Click to see achievements!</span>
+                </div>
+            </div>
+
+            <!-- 12th Standard Card -->
+            <div class="edu-card twelfth-card" onclick="showDetails('twelfth')">
+                <div class="edu-image">
+                    <img src="images/school/school-main.jpg" alt="12th Standard">
+                </div>
+                <div class="edu-content">
+                    <h3>📚 12th Standard (2023)</h3>
+                    <h4>Odisha Adarsha Vidyalaya, Hinjilicut</h4>
+                    <p><strong>Board:</strong> CBSE</p>
+                    <p><strong>Stream:</strong> PCM+Biology</p>
+                    <p><strong>Subjects:</strong> Physics, Chemistry, Maths, Biology</p>
+                    <p><strong>Percentage:</strong> 62.80%</p>
+                    <span class="click-hint">Click to see achievements!</span>
+                </div>
+            </div>
+
+            <!-- 10th Standard Card -->
+            <div class="edu-card tenth-card" onclick="showDetails('tenth')">
+                <div class="edu-image">
+                    <img src="images/school/school-main.jpg" alt="10th Standard">
+                </div>
+                <div class="edu-content">
+                    <h3>📖 10th Standard (2021)</h3>
+                    <h4>Odisha Adarsha Vidyalaya, Hinjilicut</h4>
+                    <p><strong>Board:</strong> CBSE</p>
+                    <p><strong>Percentage:</strong> 73.80%</p>
+                    <p><strong>Achievement:</strong> Strong Academic Foundation</p>
+                    <span class="view-hint">Academic Excellence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>💻 My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item">C++</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">HTML</div>
+                    <div class="skill-item">CSS</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <div class="skill-items">
+                    <div class="skill-item">Communication</div>
+                    <div class="skill-item">Team Leader</div>
+                    <div class="skill-item">Lead Generation</div>
+                    <div class="skill-item">Problem Solving</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>🚀 My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>This responsive portfolio website built from scratch to showcase my skills, education, and achievements with interactive galleries and modern design.</p>
+                <div class="tech-stack">HTML • CSS • JavaScript</div>
+            </div>
+            <div class="project-card">
+                <h3>Coming Soon!</h3>
+                <p>Currently working on exciting projects using C++, Python, and web technologies. Stay tuned for updates on innovative solutions and applications.</p>
+                <div class="tech-stack">C++ • Python • Web Development</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>📞 Get In Touch</h2>
+        <p>I'm always open to discussing new opportunities, innovative projects, and collaboration possibilities!</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>📧 Email:</strong> lalittsethii@gmail.com
+            </div>
+            <div class="contact-item">
+                <strong>💼 LinkedIn:</strong> www.linkedin.com/in/lalit2908
+            </div>
+            <div class="contact-item">
+                <strong>🐱 GitHub:</strong> github.com/LalitSethi
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Lalit Sethi. All rights reserved.</p>
+            <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+            <div class="footer-links">
+                <a href="mailto:lalittsethii@gmail.com">📧</a>
+                <a href="https://www.linkedin.com/in/lalit2908" target="_blank">💼</a>
+                <a href="https://github.com/LalitSethi" target="_blank">🐱</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup Gallery -->
+    <div id="details-popup" class="details-popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeDetails()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <div class="popup-body" id="popup-body">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function showDetails(type) {
+            const popup = document.getElementById('details-popup');
+            const title = document.getElementById('popup-title');
+            const body = document.getElementById('popup-body');
+            
+            if (type === 'college') {
+                title.textContent = '🎓 Roland Institute of Technology - My Journey';
+                body.innerHTML = `
+                    <div class="detail-section">
+                        <h3>Academic Details</h3>
+                        <p><strong>Course:</strong> Computer Science and Engineering</p>
+                        <p><strong>Current Status:</strong> 3rd Year 5th Semester</p>
+                        <p><strong>CGPA:</strong> 7.44 (4th Semester)</p>
+                        <p><strong>Expected Graduation:</strong> 2027</p>
+                    </div>
+                    <div class="achievement-gallery">
+                        <h3>My Achievements</h3>
+                        <div class="achievement-item">
+                            <img src="images/college/college-achievement-1.jpg" alt="College Achievement">
+                            <p>College Achievement - Academic Excellence</p>
+                        </div>
+                    </div>
+                `;
+            } else if (type === 'twelfth') {
+                title.textContent = '📚 12th Standard - Science Stream Excellence';
+                body.innerHTML = `
+                    <div class="detail-section">
+                        <h3>Academic Details</h3>
+                        <p><strong>School:</strong> Odisha Adarsha Vidyalaya, Hinjilicut</p>
+                        <p><strong>Board:</strong> CBSE</p>
+                        <p><strong>Stream:</strong> Science (PCM + Biology)</p>
+                        <p><strong>Year:</strong> 2023</p>
+                        <p><strong>Percentage:</strong> 62.80%</p>
+                    </div>
+                    <div class="subjects-section">
+                        <h3>Subjects Studied</h3>
+                        <div class="subjects-grid">
+                            <div class="subject-item">🔬 Physics</div>
+                            <div class="subject-item">⚗️ Chemistry</div>
+                            <div class="subject-item">📐 Mathematics</div>
+                            <div class="subject-item">🧬 Biology</div>
+                        </div>
+                    </div>
+                    <div class="achievement-gallery">
+                        <h3>My Achievements</h3>
+                        <div class="achievement-item">
+                            <img src="images/school/school-achievement-1.jpg" alt="School Achievement 1">
+                            <p>Academic Achievement - Science Excellence</p>
+                        </div>
+                        <div class="achievement-item">
+                            <img src="images/school/school-achievement-2.jpg" alt="School Achievement 2">
+                            <p>Leadership & Extracurricular Achievement</p>
+                        </div>
+                    </div>
+                `;
+            } else if (type === 'tenth') {
+                title.textContent = '📖 10th Standard - Foundation Excellence';
+                body.innerHTML = `
+                    <div class="detail-section">
+                        <h3>Academic Foundation</h3>
+                        <p><strong>School:</strong> Odisha Adarsha Vidyalaya, Hinjilicut</p>
+                        <p><strong>Board:</strong> CBSE</p>
+                        <p><strong>Year:</strong> 2021</p>
+                        <p><strong>Percentage:</strong> 73.80%</p>
+                    </div>
+                    <div class="achievement-section">
+                        <h3>Key Highlights</h3>
+                        <p>✅ Strong academic foundation with 73.80% marks</p>
+                        <p>✅ Consistent performance across all subjects</p>
+                        <p>✅ Active participation in school activities</p>
+                        <p>✅ Leadership qualities development</p>
+                    </div>
+                `;
+            }
+            
+            popup.style.display = 'flex';
+        }
+        
+        function closeDetails() {
+            document.getElementById('details-popup').style.display = 'none';
+        }
+        
+        // Close popup when clicking outside
+        window.onclick = function(event) {
+            const popup = document.getElementById('details-popup');
+            if (event.target === popup) {
+                closeDetails();
+            }
+        }
+
+        // Add smooth scrolling for navbar links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Share and Copy Functions
+        function copyPortfolioLink() {
+            const urlInput = document.getElementById('portfolio-url');
+            const feedback = document.getElementById('copy-feedback');
+            
+            urlInput.select();
+            urlInput.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand('copy');
+            
+            feedback.style.display = 'inline';
+            setTimeout(() => {
+                feedback.style.display = 'none';
+            }, 2000);
+        }
+
+        function shareViaWhatsApp() {
+            const message = "Check out Lalit Sethi's amazing portfolio! 🚀\n\n" +
+                          "CSE Student | 7.44 CGPA | Skills in C++, Python, Web Development\n\n" +
+                          "Portfolio: https://lalitsethi.github.io/portfolio";
+            const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function shareViaEmail() {
+            const subject = "Portfolio - Lalit Sethi | CSE Student";
+            const body = "Hi there!\n\n" +
+                        "I wanted to share Lalit Sethi's impressive portfolio with you.\n\n" +
+                        "✨ Computer Science Engineering Student\n" +
+                        "✨ Current CGPA: 7.44\n" +
+                        "✨ Skills: C++, Python, HTML, CSS, Leadership\n" +
+                        "✨ 3rd Year 5th Semester at Roland Institute of Technology\n\n" +
+                        "Check out the complete portfolio: https://lalitsethi.github.io/portfolio\n\n" +
+                        "Best regards!";
+            
+            const mailtoUrl = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoUrl;
+        }
+
+        function downloadResume() {
+            const resumeContent = `
+LALIT SETHI - PORTFOLIO INFORMATION
+==================================
+
+Personal Information:
+• Name: Lalit Sethi
+• Email: lalittsethii@gmail.com
+• LinkedIn: https://www.linkedin.com/in/lalit2908
+• GitHub: https://github.com/LalitSethi
+• Portfolio: https://lalitsethi.github.io/portfolio
+
+Education:
+• College: Roland Institute of Technology, Berhampur
+• Course: Computer Science and Engineering
+• Current: 3rd Year 5th Semester
+• CGPA: 7.44 (4th Semester)
+• Expected Graduation: 2027
+
+• 12th Standard (2023): CBSE - 62.80%
+• School: Odisha Adarsha Vidyalaya, Hinjilicut
+• Subjects: Physics, Chemistry, Mathematics, Biology
+
+• 10th Standard (2021): CBSE - 73.80%
+• School: Odisha Adarsha Vidyalaya, Hinjilicut
+
+Technical Skills:
+• Programming: C++, Python, HTML, CSS
+• Soft Skills: Communication, Team Leadership, Lead Generation
+
+Contact for Opportunities:
+📧 Email: lalittsethii@gmail.com
+💼 LinkedIn: https://www.linkedin.com/in/lalit2908
+🐱 GitHub: https://github.com/LalitSethi
+            `;
+            
+            const element = document.createElement('a');
+            const file = new Blob([resumeContent], {type: 'text/plain'});
+            element.href = URL.createObjectURL(file);
+            element.download = 'Lalit_Sethi_Portfolio_Info.txt';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+    </script>
+</body>
+</html>
